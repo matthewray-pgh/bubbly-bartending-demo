@@ -1,0 +1,242 @@
+.home-page {
+  min-height: 100%;
+  font-family: primary-font;
+}
+
+.events {
+  color: black;
+  background-color: #dabb69;
+  padding: 20px;
+}
+
+.events__header {
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.event__token {
+  font-size: 40px;
+  text-align: center;
+}
+
+.events__text {
+  margin: 10px 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.about {
+  color: white;
+}
+
+.about__header {
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about__text {
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.about__text--highlight {
+  margin: 0 auto;
+  font-size: 25px;
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+}
+
+.quote {
+  color: white;
+  background-color: black;
+  padding: 20px;
+}
+
+.quote__header {
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* mobile only */
+@media (max-width: 600px) {
+  .welcome {
+    height: 400px;
+    color: white;
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../assets/drinks-home-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+
+    /* background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url("../assets/drinks-cheers.jpg");
+    background-size: cover; */
+
+    display: grid;
+    align-content: center;
+  }
+
+  .welcome__header {
+    margin: 10px 0;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px #252219;
+  }
+
+  .welcome__text {
+    margin: 10px 0;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 2px 2px #252219;
+  }
+
+  .events__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 10px;
+    padding: 40px 20px;
+  }
+
+  .about {
+    padding-top: 20px;
+    background-image: linear-gradient(
+      to right,
+      /* rgba(63, 5, 41, 0.8),
+      rgb(44, 62, 82, 0.6) */
+        rgba(37, 34, 25, 0.85),
+      rgba(218, 187, 105, 0.5)
+    );
+  }
+
+  .about__text {
+    padding: 20px;
+  }
+
+  .about__image {
+    height: 230px;
+    background-image: url("../assets/nikki.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .quote__block {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+/* desktop */
+@media (min-width: 600px) {
+  .welcome {
+    height: 500px;
+    color: white;
+    background-image: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0.01),
+        rgba(0, 0, 0, 0.85)
+      ),
+      url("../assets/drinks-home-desktop.jpg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center right;
+
+    /* background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url("../assets/drinks-cheers.jpg");
+    background-size: cover; */
+
+    font-family: primary-font;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .welcome__block {
+    margin: 0 auto;
+    height: 100%;
+    width: 900px;
+  }
+
+  .welcome__header {
+    margin: 10px 0;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: start;
+    text-shadow: 2px 2px #252219;
+  }
+
+  .welcome__text {
+    margin: 10px 0;
+    font-size: 30px;
+    text-align: start;
+    text-shadow: 2px 2px #252219;
+  }
+
+  .events {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .events__block {
+    margin: 0 auto;
+    height: 100%;
+    width: 900px;
+  }
+
+  .events__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 40px 20px;
+  }
+
+  .about {
+    background-image: linear-gradient(
+        to right,
+        rgba(37, 34, 25, 0.85),
+        rgba(218, 187, 105, 0.3)
+          /* rgba(63, 5, 41, 0.8),
+        rgb(44, 62, 82, 0.6) */
+      ),
+      url("../assets/nikki.jpg");
+    background-size: cover;
+    padding: 20px 10px;
+
+    display: grid;
+    align-content: flex-end;
+    justify-content: center;
+  }
+
+  .about__block {
+    margin: 0 auto;
+    width: 900px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .quote__block {
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+  }
+}

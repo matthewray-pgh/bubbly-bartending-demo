@@ -1,0 +1,10 @@
+.app {
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+
+  display: grid;
+  grid-template-rows: 90px auto 110px;
+
+  min-height: 100vh;
+}

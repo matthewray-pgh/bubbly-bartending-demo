@@ -1,0 +1,29 @@
+.quote {
+  color: white;
+  background-color: black;
+  padding: 20px;
+}
+
+.quote__header {
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* mobile only */
+@media (max-width: 600px) {
+  .quote__block {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+/* desktop */
+@media (min-width: 600px) {
+  .quote__block {
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+  }
+}
